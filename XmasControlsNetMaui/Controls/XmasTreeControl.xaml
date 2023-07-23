@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XmasControlsNetMaui.Controls.XmasTreeControl">
+    <ContentView.Content>
+        <AbsoluteLayout Margin="5">
+            <Polygon Points="100,0 0,100 200,100" />
+
+            <Polygon Points="100,50 0,150 200,150"/>
+
+            <Polygon Points="100,100 0,200 200,200"/>
+
+            <Polygon Points="80,200 120,200 120,300 80,300"/>
+
+            <AbsoluteLayout.GestureRecognizers>
+                <DropGestureRecognizer AllowDrop="True" Drop="OnDrop" />
+            </AbsoluteLayout.GestureRecognizers>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

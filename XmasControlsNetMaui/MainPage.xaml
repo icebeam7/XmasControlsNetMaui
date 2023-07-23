@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:XmasControlsNetMaui.Controls"
+             x:Class="XmasControlsNetMaui.MainPage">
+
+    <VerticalStackLayout Margin="20" Spacing="20">
+        <controls:XmasTreeControl>
+            <controls:XmasTreeControl.LeavesBrush>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Offset="0.4" Color="LightGreen" />
+                    <GradientStop Offset="1.0" Color="ForestGreen" />
+                </LinearGradientBrush>
+            </controls:XmasTreeControl.LeavesBrush>
+
+            <controls:XmasTreeControl.TrunkBrush>
+                <LinearGradientBrush EndPoint="1,1">
+                    <GradientStop Offset="0.2" Color="#cdaa7d" />
+                    <GradientStop Offset="1.0" Color="#654321" />
+                </LinearGradientBrush>
+            </controls:XmasTreeControl.TrunkBrush>
+        </controls:XmasTreeControl>
+
+        <StackLayout Orientation="Horizontal">
+            <controls:XmasSphereControl>
+                <controls:XmasSphereControl.SphereBrush>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0.3" Color="LightBlue" />
+                        <GradientStop Offset="1.0" Color="Blue" />
+                    </RadialGradientBrush>
+                </controls:XmasSphereControl.SphereBrush>
+            </controls:XmasSphereControl>
+
+            <controls:XmasSphereControl>
+                <controls:XmasSphereControl.SphereBrush>
+                    <RadialGradientBrush Center="0.3,0.3">
+                        <GradientStop Offset="0.1" Color="LightCyan" />
+                        <GradientStop Offset="1.0" Color="Orange" />
+                    </RadialGradientBrush>
+                </controls:XmasSphereControl.SphereBrush>
+            </controls:XmasSphereControl>
+
+            <controls:XmasSphereControl>
+                <controls:XmasSphereControl.SphereBrush>
+                    <RadialGradientBrush Center="0.7,0.7">
+                        <GradientStop Offset="0.2" Color="LightGray" />
+                        <GradientStop Offset="1.0" Color="DarkGray" />
+                    </RadialGradientBrush>
+                </controls:XmasSphereControl.SphereBrush>
+            </controls:XmasSphereControl>
+
+            <controls:XmasSphereControl>
+                <controls:XmasSphereControl.SphereBrush>
+                    <RadialGradientBrush>
+                        <GradientStop Offset="0.5" Color="Pink" />
+                        <GradientStop Offset="1.0" Color="Red" />
+                    </RadialGradientBrush>
+                </controls:XmasSphereControl.SphereBrush>
+            </controls:XmasSphereControl>
+
+            <controls:XmasSphereControl>
+                <controls:XmasSphereControl.SphereBrush>
+                    <RadialGradientBrush Center="0.3,0.3">
+                        <GradientStop Offset="0.1" Color="#b9f9e5" />
+                        <GradientStop Offset="1.0" Color="#3ec69b" />
+                    </RadialGradientBrush>
+                </controls:XmasSphereControl.SphereBrush>
+            </controls:XmasSphereControl>
+        </StackLayout>
+
+        <controls:XmasStarControl StarStroke="Goldenrod" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
